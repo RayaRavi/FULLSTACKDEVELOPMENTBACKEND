@@ -7,7 +7,7 @@ class RegisterConnection
         {
             Class.forName("oracle.jdbc.driver.OracleDriver");
             System.out.println("Driver Registered Successfully");
-            Connection c=DriverManager.getConnection("jdbc:oracle:thin:@localhostserver:1521:XE","system","system");
+            Connection c=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","system","system");
             System.out.println("Connection Established Successfully.....");
             Statement s=c.createStatement();
             String s2="create table ABC(id integer primary key,name varchar2(20))";
